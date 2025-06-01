@@ -1,5 +1,14 @@
----
-
-### **📜 ۱۰. فایل ذخیره اطلاعات کاربران (`users.json`)**
-```json
-{}
+{
+    "123456789": {
+        "username": "user1",
+        "invites": 2,
+        "tokens_received": 600,
+        "invited_users": ["987654321"]
+    },
+    "987654321": {
+        "username": "user2",
+        "invites": 1,
+        "tokens_received": 500,
+        "invited_users": []
+    }
+}

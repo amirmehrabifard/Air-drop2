@@ -1,6 +1,6 @@
 from web3 import Web3
 import json
-from app.config import CONTRACT_ADDRESS, PRIVATE_KEY, AIRDROP_WALLET
+from config import CONTRACT_ADDRESS, PRIVATE_KEY, AIRDROP_WALLET
 
 w3 = Web3(Web3.HTTPProvider("https://bsc-dataseed1.binance.org/"))
 contract_abi = json.loads("""[ABI اینجا]""")

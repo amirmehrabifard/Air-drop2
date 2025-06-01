@@ -1,6 +1,6 @@
 from flask import Flask, request
-from app.bot import bot
-from app.config import WEBHOOK_URL
+from bot import bot
+from config import WEBHOOK_URL
 
 app = Flask(__name__)
 

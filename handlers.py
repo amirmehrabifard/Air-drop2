@@ -1,6 +1,6 @@
 from telebot.types import Message
-from app.storage import register_user, record_invite
-from app.blockchain import send_tokens
+from storage import register_user, record_invite
+from blockchain import send_tokens
 
 def setup_handlers(bot):
     @bot.message_handler(commands=['start'])
@@ -8,7 +8,7 @@ def setup_handlers(bot):
         user_id = message.chat.id
         args = message.text.split()
         
-        if len(args) > 1:  # بررسی ورود با لینک دعوت
+        if len(args) > 1:
             inviter_id = args[1]
             if inviter_id.isdigit():
                 record_invite(inviter_id, user_id)
